@@ -12,10 +12,9 @@
 </head>
 
 <body>
-    <header class=" p-5">
-
-        <nav class="container d-flex justify-content-between align-items-center" >
-            <img src="logo.png" class="nav-img " loading="lazy">
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <div class="nav-img" style="width: 120px; height: 50px; background-color: #eee;"></div>
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
@@ -30,9 +29,7 @@
                 </div>
             </div>
         </nav>
-       
     </header>
-
 
     <main class="container my-5">
 
@@ -40,21 +37,17 @@
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
                     <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="logo-2.png" class="mb-3" width="563"
-                        height="278" loading="lazy">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
+                    <div style="width: 563px; height: 278px; background-color: #ccc;" class="mb-3"></div>
+                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
                 </div>
-                <img src="image-page1-640px-Os_Mutantes.tif (1).png" alt="A imagem apresenta o grupo musical The Mamas and the Papas, são quatro integrantes com roupas coloridas" title="The Mamas and the Papas - Foto meramente ilustrativa" class="img-fluid img-inicio">
-
-              </div>
+                <!-- Imagem à direita substituída pelo CSS de fundo -->
+            </div>
         </section>
 
         <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a banda The Mamas and the Papas">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="image (1).png" class="rounded-pill" width="273" height="331" loading="lazy">
+            <div class="container d-flex align-items-center">
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="rounded-pill" style="width: 273px; height: 331px; background-color: #ccc;"></div>
                 </div>
                 <div class="col-5">
                     <h2>Quem foram The Mamas and the Papas?</h2>
@@ -65,27 +58,24 @@
 
         <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
             <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
-
+            <div class="container p-3 mt-3 fundo-galeria">
                 <div class="row justify-content-md-center">
                     <div class="col-md-4">
-                        <img src="images(1).jpeg"
-                            class="img-fluid rounded-5" loading="lazy">
+                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
                     </div>
                     <div class="col-md-4">
-                        <img src="The_Mamas_and_the_Papas_Ed_Sullivan_Show_1968.jpeg" class="img-fluid rounded-5 galeria-img" loading="lazy">
+                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
                     </div>
                 </div>
-                <div class="row mt-4  justify-content-md-center">
+                <div class="row mt-4 justify-content-md-center">
                     <div class="col-md-4">
-                        <img srimg-fluidpage1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" loading="lazy">
+                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
                     </div>
                     <div class="col-md-4">
-                        <img src="lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
+                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
                     </div>
                 </div>
-             </div>
+            </div>
         </section>
 
         <section id="contato">
@@ -95,28 +85,25 @@
                     <form>
                         <div class="form-group mb-3">
                             <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
                         </div>
                         <div class="form-group mb-3">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
                         </div>
                         <div class="form-group mb-3">
                             <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="text-center p-3 fst-italic">
         <p>Acesse nossas redes:</p>
         <i class="bi bi-whatsapp"></i>
@@ -124,9 +111,9 @@
         <i class="bi bi-tiktok"></i>
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
-  
 </body>
 
 </html>
