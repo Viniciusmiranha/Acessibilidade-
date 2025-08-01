@@ -2,118 +2,83 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>The Mamas and the Papas</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mamas & The Papas</title>
 </head>
 
 <body>
-    <header class="p-5">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <div class="nav-img" style="width: 120px; height: 50px; background-color: #eee;"></div>
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-            <div id="acessibilidade" class="menu-acessibilidade"> 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main class="container my-5">
+  <header class="p-5">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <!-- 🔽 Troque "logo-mamas.png" pelo nome da sua imagem de logo -->
+      <img src="img/logo-mamas.png" alt="Logo da banda The Mamas & The Papas">
 
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <div style="width: 563px; height: 278px; background-color: #ccc;" class="mb-3"></div>
-                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
-                </div>
-                <!-- Imagem à direita substituída pelo CSS de fundo -->
-            </div>
-        </section>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a banda The Mamas and the Papas">
-            <div class="container d-flex align-items-center">
-                <div class="col-4 d-flex justify-content-center">
-                    <div class="rounded-pill" style="width: 273px; height: 331px; background-color: #ccc;"></div>
-                </div>
-                <div class="col-5">
-                    <h2>Quem foram The Mamas and the Papas?</h2>
-                    <p class="p-2">The Mamas and the Papas foi uma influente banda de folk rock e pop psicodélico que surgiu nos Estados Unidos durante a década de 1960. Com vocais harmoniosos e letras marcantes, o grupo se destacou por hits como "California Dreamin'" e "Monday, Monday". Sua música refletia o espírito da contracultura da época e teve grande impacto na cena musical mundial. Fonte: Site Toda a Matéria</p>
-                </div>
-            </div>
-        </section>
+  <main class="container my-5">
 
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria">
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
-                    </div>
-                </div>
-                <div class="row mt-4 justify-content-md-center">
-                    <div class="col-md-4">
-                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="img-fluid rounded-5" style="height: 300px; background-color: #ddd;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="inicio" class="my-5">
+      <h1>Bem-vindo(a) a</h1>
 
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario">
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+      <!-- 🔽 Troque "logo-secundaria.png" pela imagem do título ou da banda -->
+      <img src="img/logo-secundaria.png" alt="The Mamas & The Papas">
 
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
-    </footer>
+      <!-- 🔽 Troque "banda-apresentacao.jpg" por uma imagem da banda -->
+      <img src="img/banda-apresentacao.jpg" alt="A banda The Mamas & The Papas se apresentando ao vivo">
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
+    <section id="The Mamas & The Papas">
+      <h2>Quem foram The Mamas & The Papas?</h2>
+      <!-- 🔽 Troque "foto-integrantes.jpg" por uma imagem dos integrantes -->
+      <img src="img/foto-integrantes.jpg" alt="Integrantes da banda The Mamas & The Papas">
+      <p>
+        The Mamas & the Papas foi uma influente banda americana de folk rock dos anos 1960,
+        conhecida por seus vocais harmônicos e sucessos como "California Dreamin'" e "Monday, Monday".
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria</h2>
+
+      <!-- 🔽 Insira suas imagens da galeria abaixo -->
+      <img src="image(1).jpeg" alt="Show da banda nos anos 60">
+      <img src="image 2.jpeg" alt="Capa de disco da banda">
+      <img src="image 3.jpeg" alt="Foto colorida do grupo">
+      <img src="img/backstage.jpg" alt="Bastidores da banda">
+    </section>
+
+    <section id="contato">
+      <h2>Entre em contato</h2>
+
+      <form>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensagem">Mensagem</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Redes sociais:</p>
+    <p>WhatsApp | Instagram | TikTok</p>
+    <p>Projeto fictício sem fins comerciais.</p>
+  </footer>
+
 </body>
 
 </html>
